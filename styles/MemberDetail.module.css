@@ -1,0 +1,34 @@
+/* profile img, info, circle chart */
+#detail_card{
+  margin-bottom: 20px;
+}
+#detail_card > div:first-child{
+  display: flex; align-items: flex-start;
+}
+#detail_card > div:first-child > div:nth-child(2){
+  margin-right: 32px;
+}
+#detail_card > div:first-child > div:nth-child(2) > h5{
+  padding: 2px 4px;
+  color: #fff;
+  background-color: #16a085; border-radius: 4px;
+}
+#detail_card > div:first-child > .circle_rate{
+  display: flex;
+}
+
+/* Chart and Game records */
+#detail_card > div:last-child{
+  display: flex;
+}
+#detail_card > div:last-child > .chart_form{
+  display: flex; flex-direction: column; align-items: flex-end;
+  width: 520px; height: 350px; margin-right: 12px;
+}
+#detail_card > div:last-child > .chart_form > div:last-child{
+  margin-top: 20px;
+}
+#detail_card > div:last-child > .records{
+  width: 300px; height: 400px;
+  overflow: auto;
+}

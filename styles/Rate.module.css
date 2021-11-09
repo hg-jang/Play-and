@@ -1,0 +1,26 @@
+.circle_box{margin-right: 16px; position: relative;}
+
+.circle_box > .hover{width: 100%; position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-size: 18px; text-align: center; animation: size-up-down 1.2s infinite;}
+
+.circle_box > .hover_box{display: none; width: 140px; height: 140px; border-radius: 50%; background-color: rgba(255, 255, 255, .8); position: absolute; top: 50%; transform: translateY(-50%);}
+.circle_box > .hover_box::after{content: ''; display: block; width: 170px; height: 2px; background-color: #474747; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-30deg); animation: width-up-and-rotate 0.8s ease-in-out;}
+.circle_box > .hover_box > .hover__left{position: absolute; top: 30%; left: 35%; transform: translate(-50%, -50%); font-size: 32px; color: #1bb1a2; font-weight: 500; animation: slide-y 1.6s;}
+.circle_box > .hover_box > .hover__right{position: absolute; top: 70%; right: 35%; transform: translate(50%, -50%); font-size: 32px; color: #e74c3c; font-weight: 500; animation: slide-y 1.6s;}
+.circle_box:hover .hover_box{display: block; cursor: pointer;}
+.circle_box:hover .hover{display: none;}
+
+/* Animations */
+@keyframes size-up-down {
+    0%{font-size: 18px;}
+    50%{font-size: 19px;}
+    100%{font-size: 18px;}
+  }
+  @keyframes width-up-and-rotate {
+    0%{width: 0; transform: translate(-50%, -50%) rotate(0);}
+    70%{width: 170px; transform: translate(-50%, -50%) rotate(0);}
+    100%{transform:translate(-50%, -50%) rotate(-30dg);}
+  }
+  @keyframes slide-y {
+    0%{opacity: 0;}
+    40%{opacity: 0; transform: translateY(-50%);}
+  }

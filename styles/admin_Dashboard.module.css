@@ -1,0 +1,26 @@
+.admin_dashboard{
+  display: grid; grid-template-rows: 40% 60%; grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+  "members posts chats"
+  "chart chart chart";
+  height: 100%;
+  background-color: #E9EBF2;
+}
+.admin_dashboard > div{
+  margin: 12px;
+  background-color: #c4e3f0; border: 1px solid #000;
+  font-size: 36px;
+}
+.admin_dashboard > .members{
+  grid-area: members;
+}
+.admin_dashboard > .posts{
+  grid-area: posts;
+}
+.admin_dashboard > .chats{
+  grid-area: chats;
+}
+.admin_dashboard > .chart{
+  grid-area: chart;
+  margin-top: 12px;
+}

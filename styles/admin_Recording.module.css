@@ -1,0 +1,8 @@
+.admin_recording{
+  height: 100%; padding: 16px;
+  background-color: #E9EBF2;
+}
+.admin_recording > .record_form{
+  display: flex; flex-direction: column; align-items: center;
+  width: 550px;
+}

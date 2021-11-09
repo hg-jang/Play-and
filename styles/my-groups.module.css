@@ -1,0 +1,93 @@
+.my_groups{
+  min-height: calc(100% - 130px);
+  background-color: #101820;
+}
+
+.joined_groups > .container__joined_groups{
+  display: flex; flex-direction: column;
+  width: 1080px; margin: 0 auto 48px;
+  transition: .5s;
+}
+.joined_groups > .container__joined_groups > h1{
+  margin: 32px 0 24px 0; 
+  font-size: 24px; color: #3498db; 
+}
+.joined_groups > .container__joined_groups > div{
+  display: grid; grid-template-columns: repeat(3, 1fr);
+}
+.joined_groups > .container__joined_groups > div > div{
+  margin: 16px auto;
+}
+
+.new_group > .container__new_group{
+  display: flex; justify-content: center; align-items: center; 
+  width: 1080px; margin: 0 auto; padding: 24px 0;
+  transition: .5s;
+}
+.new_group > .container__new_group > button{font-size: 20px; transition: .5s;}
+.new_group > .container__new_group > button:first-child{margin-right: 8px;}
+
+@keyframes rotate {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+/* 타블렛 사이즈 */
+/* 타블렛 사이즈 */
+@media screen and (max-width: 1079px) {
+  .joined_groups > .container__joined_groups{width: 768px;}
+
+  /* Group Card */
+  /* .group_card{width: 220px;}
+
+  .group_card > .group_image{height: 220px;}
+
+  .group_card .team_name{padding: 12px 0; font-size: 18px;}
+
+  .group_card > .group_introduce{font-size: 10px;}
+
+  .group_card > .group_info li .info_name{font-size: 10px;}
+  .group_card > .group_info li .info_content{font-size: 14px;} */
+
+  .new_group > .container__new_group{width: 768px;}
+}
+
+/* 작은 타블렛 사이즈 */
+/* 작은 타블렛 사이즈 */
+@media screen and (max-width: 768px) {
+  .joined_groups > .container__joined_groups{width: 85%;}
+
+  .joined_groups > .container__joined_groups > div{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Group Card */
+  /* .group_card > .group_info li .info_content{font-size: 12px;}
+
+  .new_group > .container__new_group{width: 85%;} */
+}
+
+/* 휴대폰 사이즈 */
+/* 휴대폰 사이즈 */
+@media screen and (max-width: 575px) {
+  .joined_groups > .container__joined_groups > div{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Group Card */
+  /* .group_card{width: 280px;}
+  .group_card > .group_image{
+    height: 28px;
+    background-color: #fce9ed;
+    border-top-left-radius: 8px; border-top-right-radius: 8px;
+  }
+  .group_card > .group_image > img{display: none;}
+  .group_card > .group_image > a{
+    top: 50%; transform: translateY(-50%);
+  }
+  .group_card > .group_introduce{display: none;}
+
+  .new_group > .container__new_group > button{
+    font-size: 16px;
+  } */
+}

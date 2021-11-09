@@ -1,0 +1,17 @@
+/* Chat Component */
+.mine{
+  display: flex; justify-content: flex-start;
+  max-width: 300px; min-width: 240px; margin-bottom: 8px;
+  align-self: flex-end;
+}
+.others{
+  display: flex; justify-content: flex-start;
+  max-width: 300px; min-width: 240px; margin-bottom: 8px;
+  align-self: flex-start;
+}
+
+/* ChatForm Component */
+.chat_form{
+  display: flex; justify-content: space-between; align-items: center;
+  width: 100%; padding: 0 4px; margin: 8px 0;
+}

@@ -1,0 +1,150 @@
+/* For Community page */
+.container_cm{
+  display: grid;
+  grid-template-columns: calc(100% - 450px) 450px;
+  min-width: 1070px;
+  background: #E9EBF2; transition: .5s;
+}
+.container_cm > .post_container{
+  display: flex; flex-direction: column;
+  height: 100vh;
+}
+.container_cm > .post_container > .posts{
+  display: flex; flex-direction: column;
+  width: 100%; margin-bottom: 8px;
+  overflow: auto; scrollbar-color: rgba(116, 185, 255, .5) rgba(255, 255, 255, 0); scrollbar-width: thin;
+}
+
+.container_cm > .chat_container{
+  height: 100vh; padding: 8px; margin-left: 8px;
+}
+.container_cm > .chat_container > .chats{
+  display: flex; flex-direction: column;
+  width: 100%; height: calc(100% - 72px);
+  overflow-y: auto; scrollbar-color: rgba(116, 185, 255, .5) rgba(255, 255, 255, 0); scrollbar-width: thin;
+}
+
+.container_rk_li{
+  display: grid;
+  grid-template-columns: calc(100% - 300px) 300px;
+  background: #E9EBF2; transition: .5s;
+}
+.container_rk_li > .contents{
+  display: grid;
+  grid-template-rows: 80px calc(100vh - 80px);
+}
+/* For Ranking page */
+.container_rk_li > .contents > .ranking_filter{
+  display: flex; align-items: center; justify-content: end;
+  width: 680px; margin: 0 auto;
+  transition: .5s;
+}
+.container_rk_li > .contents > .ranking_filter > div:first-child{
+  margin-right: 8px;
+}
+
+.container_rk_li > .contents > .ranking{
+  display: flex; flex-direction: column; align-items: center; 
+  width: 100%; margin-bottom: 8px;
+  overflow: auto; scrollbar-color: rgba(116, 185, 255, .5) rgba(255, 255, 255, 0); scrollbar-width: thin;
+}
+
+/* For Member List page */
+.container_rk_li > .contents > .input_box{
+  display: flex; align-items: center; justify-content: end;
+  margin: 0 18px;
+  transition: .5s;
+}
+.container_rk_li > .contents > .member_list{
+  margin: 0 18px 8px;
+  overflow: auto; scrollbar-color: rgba(237, 66, 100, .6) rgba(255, 255, 255, 0); scrollbar-width: thin;
+  transition: .5s;
+}
+.container_rk_li > .contents > .member_list > .members{
+  display: grid; grid-template-columns: repeat(3, 1fr);
+}
+
+/* Member's Detail information page in Member List */
+.container_member_detail{
+  display: grid;
+  grid-template-columns: calc(100% - 300px) 300px;
+  transition: .5s;
+}
+.container_member_detail > .detail{
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+
+/* For Games page */
+.container_games{
+  display: flex; flex-direction: column;
+  min-width: 720px; padding: 16px;
+  background: #E9EBF2;
+}
+.container_games > .game_records{
+  height: calc(100% - 90px);
+  overflow: auto; scrollbar-color: rgba(116, 185, 255, .5) rgba(255, 255, 255, 0); scrollbar-width: thin;
+}
+
+
+/* 대형 모니터 */
+@media screen and (min-width: 1649px) {
+  .container_rk_li > .contents > .member_list > .members{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 일반 모니터 */
+@media screen and (max-width: 1309px) {
+  .container_cm{
+    grid-template-columns: calc(100% - 450px) 450px;
+  }
+
+  .container_rk_li{
+    min-width: 910px;
+  }
+  .container_rk_li > .contents > .ranking_filter{
+    width: 80%; min-width: 500px;
+  }
+  
+  .container_rk_li > .contents > .member_list > .members{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* 타블렛 사이즈 */
+@media screen and (max-width: 900px) {
+  .container_rk_li{
+    grid-template-columns: repeat(1, 1fr);
+    min-width: 590px;
+  }
+}
+
+/* 작은 타블렛 사이즈 */
+@media screen and (max-width: 768px) {
+  /* 멤버 랭킹 */
+  .container_rk_li > .contents > .ranking_filter{
+    min-width: 380px;
+  }
+}
+
+/* 휴대폰 사이즈 */
+/* @media screen and (max-width: 575px) {
+  .container_rk_li{
+    display: flex; flex-direction: column;
+    min-width: 0;
+  }
+  .container_rk_li > .contents{
+    display: flex; flex-direction: column;
+  }
+
+  멤버 랭킹
+  .container_rk_li > .contents > .ranking_filter{
+    width: 90%; min-width: auto;
+  }
+
+  멤버 리스트
+  .container_rk_li > .contents > .input_box{
+    width: 88%;
+  }
+} */
