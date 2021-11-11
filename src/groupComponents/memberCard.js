@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react'
 import { useDispatch } from 'react-redux'
 import Router, { useRouter } from 'next/router';
-import { SET_MEMBER_UID } from '../../reducers/group';
+import { SET_MEMBER } from '../../reducers/group';
 
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -21,8 +21,8 @@ const MemberCard = ({ member, index }) => {
 
   const onClickOpenDetail = useCallback(() => {
     dispatch({
-      type: SET_MEMBER_UID,
-      uid: member.uid,
+      type: SET_MEMBER,
+      data: member,
     })
     
     Router.push(`/${group}/${member.displayName}`)

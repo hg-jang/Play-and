@@ -11,15 +11,16 @@ import RankingCard from '../../src/groupComponents/rankingCard';
 import Aside from '../../src/groupComponents/aside';
 
 const ranking_page = () => {
-  const games = useSelector((state) => state.group.currentGroup?.games.slice(0, 5))
-  const members = useSelector((state) => state.group.currentGroup?.members.sort((a, b) => b.rating - a.rating))
+  const { currentGroup } = useSelector((state) => state.group)
+  const games = currentGroup.games.concat().slice(0, 5)
+  const members = currentGroup.members.concat().sort((a, b) => b.rating - a.rating)
   
   const [member, onChangeMember] = useInput('')
-  const [MEMBERS, setMEMBERS] = useState(members)
+  const [searchedMembers, setSearchedMembers] = useState(members)
   
   useEffect(() => {
-    if(member) { return setMEMBERS(members.filter((m) => m.displayName.includes(member))) }
-    return setMEMBERS(members)
+    if(member) { return setSearchedMembers(members.filter((m) => m.displayName.includes(member))) }
+    return setSearchedMembers(members)
   }, [member])
 
   return (
@@ -39,10 +40,10 @@ const ranking_page = () => {
             <TextField label="Search Member..." value={member} onChange={onChangeMember} />
           </div>
           <div className={styles.ranking}>
-            {MEMBERS && MEMBERS.map((m, idx) => <RankingCard member={m} index={idx} />)}
+            {searchedMembers && searchedMembers.map((m, idx) => <RankingCard member={m} index={idx} />)}
           </div>
         </div>
-        <Aside games={games} />
+        {games && <Aside games={games} />}
       </div>
     </GroupLayout>
   )

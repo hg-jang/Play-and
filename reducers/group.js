@@ -101,7 +101,10 @@ export const initialState = {
   wholeGroups: null,             // 전체 그룹 목록
   joinedGroups: null,            // 가입된 그룹 목록
   awaitingGroups: null,          // 가입 신청한 그룹 목록
-  currentGroup: null,            // 현재 그룹
+  currentGroup: {
+    games: [],
+    members: [],
+  },            // 현재 그룹
   detailedMember: null,          // 멤버 상세 정보 대상
 }
 
@@ -199,7 +202,7 @@ export const ADD_CHAT_REQUEST = 'ADD_CHAT_REQUEST'
 export const ADD_CHAT_SUCCESS = 'ADD_CHAT_SUCCESS'
 export const ADD_CHAT_FAILURE = 'ADD_CHAT_FAILURE'
 
-export const SET_MEMBER_UID = 'SET_MEMBER_UID'
+export const SET_MEMBER = 'SET_MEMBER'
 
 export const FIND_GAMES_REQUEST = 'FIND_GAMES_REQUEST'
 export const FIND_GAMES_SUCCESS = 'FIND_GAMES_SUCCESS'
@@ -773,10 +776,10 @@ const reducer = (state = initialState, action) => {
         isChatAdding: false,
         chatAddError: action.error,
       }
-    case SET_MEMBER_UID:
+    case SET_MEMBER:
       return {
         ...state,
-        detailedMember: action.uid,
+        detailedMember: action.data,
       }
     case FIND_GAMES_REQUEST:
       return {

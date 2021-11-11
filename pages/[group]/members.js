@@ -24,7 +24,7 @@ const members_page = () => {
           </div>
           <div className={styles.member_list}>
             <div className={styles.members}>
-              {members.map((m, index) => <MemberCard member={m} index={index} />)}
+              {members && members.map((m, index) => <MemberCard member={m} index={index} />)}
             </div>
           </div>
         </div>

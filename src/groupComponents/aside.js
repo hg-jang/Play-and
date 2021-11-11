@@ -9,7 +9,7 @@ const Aside = ({ games }) => {
   return (
     <div className={styles.asides}>
       <div className={styles.aside1}>
-        {games.length !== 0
+        {games && games.length !== 0
         ? <div className="games">
             {games.map((game, idx) => <GameRecord game={game} index={idx} />)}  
           </div>

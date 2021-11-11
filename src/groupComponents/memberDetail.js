@@ -1,4 +1,5 @@
 import React from 'react';
+import Router, { useRouter } from 'next/router';
 import { useSelector } from 'react-redux';
 
 import Card from '@mui/material/Card';
@@ -12,8 +13,7 @@ import MemberWinningRate from './memberWinningRate';
 import MemberRankingRate from './memberRankingRate';
 import MemberChart from './memberChart';
 
-const MemberDetail = ({ memberId }) => {
-  const member = useSelector((state) => state.group.currentGroup?.members.find(m => m.uid === memberId))
+const MemberDetail = ({ member }) => {
   const games = useSelector((state) => state.group.currentGroup?.games.filter((g) => g.winners.includes(member.displayName) || g.losers.includes(member.displayName)))
 
   return (
