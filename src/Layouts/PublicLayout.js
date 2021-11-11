@@ -12,35 +12,12 @@ import {
 import { fbAuth } from '../fbase';
 import { onAuthStateChanged } from '@firebase/auth';
 
-import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import EditIcon from '@mui/icons-material/Edit';
 import Avatar from '@mui/material/Avatar';
 
 import styles from '../../styles/PublicLayout.module.css'
-
-const NameTextField = styled(TextField)({
-  '& .MuiInputLabel-root': {
-    color: 'white',
-  },
-  '& label.Mui-focused': {
-    color: '#3498db',
-  },
-  '& .MuiOutlinedInput-root': {
-    color: '#3498db',
-
-    '& fieldset': {
-      borderColor: 'white',
-    },
-    '&:hover fieldset': {
-      borderColor: '#3498db',
-    },
-    '&.Mui-focused fieldset': {
-      borderColor: '#3498db',
-    },
-  },
-});
 
 const PublicLayout = ({ children }) => {
   const imageInputRef = useRef()
@@ -129,7 +106,7 @@ const PublicLayout = ({ children }) => {
             </li>
             {isNameEditing ?
             <li className={styles.name_editing}>
-              <NameTextField size="small" label="New Name" variant="outlined" value={text} onChange={onChangeText} />
+              <TextField size="small" label="New Name" variant="outlined" value={text} onChange={onChangeText} />
               <Button variant="contained" onClick={onClickCompleteEdit}>Edit</Button>
             </li>
             :
