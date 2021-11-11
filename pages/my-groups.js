@@ -12,8 +12,8 @@ import {
 import Button from '@mui/material/Button'
 
 import styles from '../styles/my-groups.module.css'
-import GroupCard from '../src/Components/GroupCard'
-import PublicLayout from '../src/layouts/PublicLayout'
+import GroupCard from '../src/Components/groupCard'
+import PublicLayout from '../src/layouts/publicLayout'
 
 const my_groups = () => {
   const dispatch = useDispatch()

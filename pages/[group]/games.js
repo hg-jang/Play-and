@@ -2,9 +2,9 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 import styles from '../../styles/group.module.css'
-import GroupLayout from '../../src/Layouts/GroupLayout'
-import GameRecordFilter from '../../src/GroupComponents/GameRecordFilter'
-import GameRecord from '../../src/GroupComponents/GameRecord'
+import GroupLayout from '../../src/Layouts/groupLayout'
+import GameRecordFilter from '../../src/GroupComponents/gameRecordFilter'
+import GameRecord from '../../src/GroupComponents/gameRecord'
 
 const games_page = () => {
   const games = useSelector((state) => state.group.currentGroup?.findedGames)

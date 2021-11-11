@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import Link from 'next/link';
 
 import styles from '../styles/index.module.css';
-import PublicLayout from '../src/Layouts/PublicLayout';
+import PublicLayout from '../src/Layouts/publicLayout';
 
 const Home = () => {
   return (

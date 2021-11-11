@@ -6,9 +6,9 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import TextField from '@mui/material/TextField';
 
 import styles from '../../styles/group.module.css'
-import GroupLayout from '../../src/Layouts/GroupLayout'
-import RankingCard from '../../src/GroupComponents/RankingCard';
-import Aside from '../../src/GroupComponents/Aside';
+import GroupLayout from '../../src/Layouts/groupLayout'
+import RankingCard from '../../src/GroupComponents/rankingCard';
+import Aside from '../../src/GroupComponents/aside';
 
 const ranking_page = () => {
   const games = useSelector((state) => state.group.currentGroup?.games.slice(0, 5))

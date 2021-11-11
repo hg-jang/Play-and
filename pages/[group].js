@@ -15,11 +15,11 @@ import {
 } from 'firebase/firestore';
 
 import styles from '../styles/group.module.css';
-import GroupLayout from '../src/Layouts/GroupLayout';
-import PostForm from '../src/GroupComponents/PostForm';
-import Post from '../src/GroupComponents/Post'
-import ChatForm from '../src/GroupComponents/ChatForm';
-import Chat from '../src/GroupComponents/Chat'
+import GroupLayout from '../src/Layouts/groupLayout';
+import PostForm from '../src/GroupComponents/postForm';
+import Post from '../src/GroupComponents/post'
+import ChatForm from '../src/GroupComponents/chatForm';
+import Chat from '../src/GroupComponents/chat'
 
 const group_index = () => {
   const router = useRouter()

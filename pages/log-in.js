@@ -5,8 +5,8 @@ import useInput from '../hooks/useInput'
 import { LOG_IN_REQUEST } from '../reducers/user'
 import Router from 'next/router'
 
-import PublicLayout from '../src/layouts/PublicLayout'
 import styles from '../styles/logIn.module.css'
+import PublicLayout from '../src/layouts/publicLayout'
 
 const logIn = () => {
   const dispatch = useDispatch()

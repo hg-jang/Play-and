@@ -16,11 +16,11 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 
 import styles from '../../styles/admin.module.css'
-import AdminLayout from '../../src/layouts/AdminLayout';
-import Dashboard from '../../src/GroupAdminComponents/Dashboard';
-import Config from '../../src/GroupAdminComponents/Config'
-import Recording from '../../src/GroupAdminComponents/Recording'
-import Members from '../../src/GroupAdminComponents/Members'
+import AdminLayout from '../../src/layouts/adminLayout';
+import Dashboard from '../../src/GroupAdminComponents/dashboard';
+import Config from '../../src/GroupAdminComponents/config'
+import Recording from '../../src/GroupAdminComponents/recording'
+import Members from '../../src/GroupAdminComponents/members'
 
 const admin_page = () => {
   const router = useRouter()

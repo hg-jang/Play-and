@@ -4,9 +4,9 @@ import { useSelector } from 'react-redux'
 import Button from '@mui/material/Button'
 
 import styles from '../../styles/group.module.css'
-import GroupLayout from '../../src/Layouts/GroupLayout'
-import MemberDetail from '../../src/GroupComponents/MemberDetail'
-import Aside from '../../src/GroupComponents/Aside'
+import GroupLayout from '../../src/Layouts/groupLayout'
+import MemberDetail from '../../src/GroupComponents/memberDetail'
+import Aside from '../../src/GroupComponents/aside'
 
 const member_page = () => {
   const uid = useSelector((state) => state.group.detailedMember)

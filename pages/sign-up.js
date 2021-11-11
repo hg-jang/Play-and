@@ -6,7 +6,7 @@ import { Button, Box, TextField } from '@mui/material'
 import Router from 'next/router'
 
 import styles from '../styles/signUp.module.css'
-import PublicLayout from '../src/layouts/PublicLayout'
+import PublicLayout from '../src/layouts/publicLayout'
 
 const signUp = () => {
   const dispatch = useDispatch()

@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 
 import styles from "../styles/create.module.css";
-import PublicLayout from '../src/layouts/PublicLayout';
+import PublicLayout from '../src/layouts/publicLayout';
 import useInput from '../hooks/useInput';
 
 const WhiteTextField = styled(TextField)({
