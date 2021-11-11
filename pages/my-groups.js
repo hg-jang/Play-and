@@ -12,7 +12,7 @@ import {
 import Button from '@mui/material/Button'
 
 import styles from '../styles/my-groups.module.css'
-import GroupCard from '../src/Components/groupCard'
+import GroupCard from '../src/components/groupCard'
 import PublicLayout from '../src/layouts/publicLayout'
 
 const my_groups = () => {

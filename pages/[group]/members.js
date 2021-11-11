@@ -5,9 +5,9 @@ import { useSelector } from 'react-redux'
 import TextField from '@mui/material/TextField'
 
 import styles from '../../styles/group.module.css'
-import GroupLayout from '../../src/Layouts/groupLayout'
-import MemberCard from '../../src/GroupComponents/memberCard'
-import Aside from '../../src/GroupComponents/aside'
+import GroupLayout from '../../src/layouts/groupLayout'
+import MemberCard from '../../src/groupComponents/memberCard'
+import Aside from '../../src/groupComponents/aside'
 
 const members_page = () => {
   const [member, onChangeMember] = useInput('')

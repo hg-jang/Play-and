@@ -18,7 +18,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 
 import styles from '../styles/join.module.css'
-import PublicLayout from '../src/Layouts/publicLayout';
+import PublicLayout from '../src/layouts/publicLayout';
 
 const WhiteTextField = styled(TextField)({
   '& .MuiInputLabel-root': {

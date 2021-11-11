@@ -17,10 +17,10 @@ import Box from '@mui/material/Box';
 
 import styles from '../../styles/admin.module.css'
 import AdminLayout from '../../src/layouts/adminLayout';
-import Dashboard from '../../src/GroupAdminComponents/dashboard';
-import Config from '../../src/GroupAdminComponents/config'
-import Recording from '../../src/GroupAdminComponents/recording'
-import Members from '../../src/GroupAdminComponents/members'
+import Dashboard from '../../src/groupAdminComponents/dashboard';
+import Config from '../../src/groupAdminComponents/config'
+import Recording from '../../src/groupAdminComponents/recording'
+import Members from '../../src/groupAdminComponents/members'
 
 const admin_page = () => {
   const router = useRouter()
