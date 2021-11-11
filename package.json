@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "netlify-deploy": "next build && next export"
   },
   "dependencies": {
     "@emotion/react": "^11.5.0",
@@ -14,6 +15,7 @@
     "@mui/icons-material": "^5.0.4",
     "@mui/lab": "^5.0.0-alpha.51",
     "@mui/material": "^5.0.4",
+    "@netlify/plugin-nextjs": "^3.9.2",
     "axios": "^0.23.0",
     "chart.js": "^3.6.0",
     "firebase": "^9.1.3",
