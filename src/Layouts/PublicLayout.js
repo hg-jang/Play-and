@@ -14,10 +14,8 @@ import { onAuthStateChanged } from '@firebase/auth';
 
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
 import TextField from '@mui/material/TextField';
 import EditIcon from '@mui/icons-material/Edit';
-import DriveFileRenameOutlineRoundedIcon from '@mui/icons-material/DriveFileRenameOutlineRounded';
 import Avatar from '@mui/material/Avatar';
 
 import styles from '../../styles/PublicLayout.module.css'

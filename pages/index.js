@@ -1,8 +1,8 @@
-import React from 'react'
-import Button from '@mui/material/Button'
-import Link from 'next/link'
+import React from 'react';
+import Button from '@mui/material/Button';
+import Link from 'next/link';
 
-import styles from '../styles/index.module.css'
+import styles from '../styles/index.module.css';
 import PublicLayout from '../src/Layouts/PublicLayout';
 
 const Home = () => {
@@ -47,4 +47,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Home
