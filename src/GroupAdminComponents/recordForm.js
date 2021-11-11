@@ -11,7 +11,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 import styles from '../../styles/admin_RecordForm.module.css';
 import RecordForm_Member from './recordForm_Member';
-import RecordForm_Selected from './RrecordForm_Selected';
+import RecordForm_Selected from './rrecordForm_Selected';
 
 const getPercentage = (winnersAverage, losersAverage) => {
   return (1 / (1 + (Math.pow(10, (winnersAverage - losersAverage) / 400)))).toFixed(2)
