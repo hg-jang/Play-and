@@ -5,7 +5,7 @@ import { fbAuth } from '../fbase';
 import { onAuthStateChanged } from '@firebase/auth';
 
 import styles from '../../styles/AdminLayout.module.css';
-import Nav from "../GroupAdminComponents/nav";
+import Nav from "../groupAdminComponents/nav";
 
 const AdminLayout = ({ children }) => {
   const dispatch = useDispatch()
