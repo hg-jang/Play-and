@@ -717,7 +717,7 @@ function* loadMemberGames(action) {
 
     for(let gameId of action.data.memberGamesArr) {
       obj = {}
-      const gameDocRef = yield call(doc, fbFirestore, action.data.group, 'group data', 'members', 'games', gameId)
+      const gameDocRef = yield call(doc, fbFirestore, action.data.group, 'group data', 'members', action.data.memberId, 'games', gameId)
       const gameDoc = yield call(getDoc, gameDocRef)
 
       const GAME_DATA = yield gameDoc.data()
@@ -952,7 +952,7 @@ function* addGameInMember(action) {
       data: {
         winners: action.data.winners,
         losers: action.data.losers,
-        ratingChange: action.data.ratingChange,
+        ratingChange: action.data.gameObj.ratingChange,
       },
     })
   } catch(err) {

@@ -40,7 +40,7 @@ const MemberDetail = ({ member }) => {
         </div>
       </CardContent>
       <CardContent>
-        <MemberChart memberId={memberId} />
+        <MemberChart memberId={member.uid} />
         <div className={styles.records}>
           {games.map((game) => <GameRecord game={game} />)}
         </div>

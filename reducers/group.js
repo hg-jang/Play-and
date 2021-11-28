@@ -300,7 +300,6 @@ const reducer = (state = initialState, action) => {
         membersLoadError: null,
       }
     case LOAD_MEMBERS_SUCCESS:
-      console.log('reducer :', action.data);
       return {
         ...state,
         isMembersLoading: false,
@@ -692,9 +691,17 @@ const reducer = (state = initialState, action) => {
           ...state.currentGroup,
           posts: state.currentGroup.posts.map((post) => {
             if(post.id !== action.data.postId) { return post }
+            // comments 있을 때
+            if(post.comments) {
+              return {
+                ...post,
+                comments: [action.data.commentObj, ...post.comments]
+              }
+            }
+            // comments 없을 때
             return {
               ...post,
-              comments: [action.data.commentObj, ...post.comments]
+              comments: [action.data.commentObj]
             }
           })
         }
