@@ -1,0 +1,8 @@
+.join_group{
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  min-height: calc(100vh - 130px);
+  background-color: #101820;
+}
+.join_group > div:first-child{
+  margin-bottom: 32px;
+}

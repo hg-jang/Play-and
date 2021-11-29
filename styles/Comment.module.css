@@ -1,0 +1,38 @@
+/* CommentForm Component */
+.comment_form{
+  display: flex; justify-content: space-between; align-items: center;
+  width: 100%;
+}
+
+/* Comment Componenet */
+.comment{
+  display: flex;
+  width: 100%; margin-top: 8px;
+}
+.comment > img{
+  width: 22px; height: 22px; margin-right: 4px;
+  border-radius: 50%;
+}
+.comment > div{
+  display: flex; flex-direction: column; align-items: flex-start;
+  width: calc(100% - 20px);
+}
+.comment > div > .name_date{
+  font-size: 12px; line-height: 22px;
+}
+.comment > div > .name_date > .name{
+  margin-right: 4px;
+}
+.comment > div > .name_date > .date{
+  color: #95a5a6;
+}
+.comment > div > .content{
+  width: 100%;
+  word-break: keep-all;
+}
+.comment > div > .buttons{
+  display: flex; align-items: center;
+}
+.comment > div > .buttons > i{
+  cursor: pointer;
+}

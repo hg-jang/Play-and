@@ -1,0 +1,70 @@
+.post{
+  margin: 8px 32px; padding: 8px;
+  background-color: #fff;
+}
+.post > .post_writer{
+  display: flex; align-items: flex-start;
+  margin-bottom: 4px; padding: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.post > .post_writer > div{
+  display: flex; flex-direction: column; align-items: flex-start;
+}
+.post > .post_writer > div > span:first-child{
+  margin-bottom: 4px;
+  font-size: 16px; line-height: 16px;
+}
+.post > .post_writer > div > span:last-child{
+  font-size: 10px; line-height: 10px; color: #95a5a6;
+}
+.post > .post_content{
+  min-height: 72px; margin-bottom: 4px; padding: 8px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.post > .post_content > #edit_buttons{
+  position: absolute; top: 8px; right: 8px;
+}
+.post > .post_content > .content{
+  width: calc(100% - 82px);
+  font-size: 20px; word-break: keep-all;
+}
+.post > .post_images{
+  display: flex; align-items: center;
+  height: 64px; margin-bottom: 4px; padding: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.post > .post_images > img{
+  height: 100%; margin-right: 8px;
+}
+.post > textarea{
+  width: 100%; max-width: 100%; height: 80px; max-height: 200px;
+}
+.post > .post_buttons{
+  display: flex; justify-content: space-between;
+  width: 100%; margin: 8px 0;
+}
+.post > .images{
+  display: flex; align-items: center;
+  width: 100%; height: 124px;
+  overflow-x: auto;
+}
+.post > .images > .img{
+  display: flex; flex-direction: column; justify-content: center;
+  margin-right: 8px;
+}
+.post > .images > .img > img{
+  height: 60px; margin-bottom: 4px;
+}
+.post > .images > .img > button{
+  margin: 0;
+}
+
+
+.post > .post_comments{
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.post > .post_comments > .no_comments{
+  margin-top: 8px;
+  font-size: 12px; color: #636e72;
+}

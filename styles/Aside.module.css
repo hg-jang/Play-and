@@ -1,0 +1,21 @@
+.asides{
+    display: flex; flex-direction: column; justify-content: space-around; align-items: center;
+  }
+.asides > .aside1{
+  width: 95%; height: 45%; margin: 0 auto; 
+  overflow: auto; scrollbar-color: rgba(237, 66, 100, .6) rgba(255, 255, 255, 0); scrollbar-width: thin;
+}  
+.asides > .aside2{
+  display: flex; flex-direction: column; justify-content: center; align-items: center; 
+  width: 95%; height: 45%; margin: 0 auto; 
+  background-color: rgba(255, 255, 255, .6);
+}
+.asides > .aside2 > h1{font-size: 16px;}
+.asides > .aside2 > h2{font-size: 12px;}
+
+/* 타블렛 사이즈 */
+@media screen and (max-width: 900px) {
+  .asides{
+    display: none;
+  }
+}

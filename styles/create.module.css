@@ -1,0 +1,20 @@
+.create_group{
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  height: calc(100vh - 130px); padding: 80px 0;
+  background-color: #101820;
+}
+
+.create_group h1{
+  margin-bottom: 30px;
+  font-size: 40px; color: #dfe6e9; line-height: 1.5; letter-spacing: 1.5px;
+}
+.create_group .container{
+  display: flex; flex-direction: column;
+  width: 400px; margin-bottom: 40px;
+}
+.create_group .container .name{
+  width: 100%; margin-bottom: 16px;
+}
+.create_group .container .introduce{
+  width: 100%;  
+}

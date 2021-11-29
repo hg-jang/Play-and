@@ -1,0 +1,141 @@
+.ranking_card{
+  display: flex; align-items: center; justify-content: space-between; 
+  width: 680px; margin: 10px auto; padding: 16px; 
+  background-color: rgba(255, 255, 255, .8); box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+  transition: .3s; cursor: pointer;
+}
+.ranking_card:hover{background-color: rgba(200, 214, 229, .6);}
+
+/* left => profile img and name */
+.ranking_card > .left{
+  display: flex; flex-direction: column; align-items: center; 
+  padding-right: 12px;
+  border-right: 1px solid #636e72;
+}
+.ranking_card > .left > .profile_img{
+ margin-bottom: 4px;
+}
+.ranking_card > .left > .name{
+  height: 100%; font-size: 16px; 
+  text-align: center;
+}
+
+/* mid => rating and game score */
+.ranking_card > .mid{
+  display: flex; flex-direction: column; align-items: center; justify-content: center; 
+  width: 260px; height: 100%;   
+}
+.ranking_card > .mid > .rating{
+  display: flex; flex-direction: column; justify-content: center; align-items: center; 
+  margin-bottom: 4px;
+}
+.ranking_card > .mid > .rating > span:first-child{
+  margin-bottom: 2px; 
+  font-size: 48px; line-height: 48px; letter-spacing: 5px;
+}
+.ranking_card > .mid > .rating > span:last-child{
+  font-size: 12px; color: #444; letter-spacing: 1.2px;
+}
+
+.ranking_card > .mid > .score{display: flex; align-items: center;}
+.ranking_card > .mid > .score > span{display: flex; font-size: 20px;}
+.ranking_card > .mid > .score > span.win{margin-right: 8px;}
+
+/* right => ranking */
+.ranking_card > .right{
+  display: flex; flex-direction: column; justify-content: center; align-items: center; 
+  height: 100%; padding-left: 12px;
+  border-left: 1px solid #636e72;
+}
+.ranking_card > .right > .ranking{font-size: 48px; line-height: 48px;}
+.ranking_card > .right > span:last-child{font-size: 24px; line-height: 24px; letter-spacing: 2px;}
+
+
+
+
+
+/* 일반 모니터 사이즈 */
+@media screen and (max-width: 1309px) {
+  .ranking_card{ 
+    width: 80%; min-width: 500px; margin: 10px auto; padding: 12px; 
+  }
+}
+
+/* 작은 타블렛 사이즈 */
+@media screen and (max-width: 768px) {
+  .ranking_card{ 
+    min-width: 380px;
+  }
+
+  .ranking_card > .left > .profile_img > div{
+    width: 78px; height: 78px;
+  }
+  
+  .ranking_card > .mid{
+    width: 260px; height: 100%;   
+  }
+  .ranking_card > .mid > .rating{
+    margin-bottom: 4px;
+  }
+  .ranking_card > .mid > .rating > span:first-child{
+    font-size: 34px; line-height: 34px;
+  }
+  .ranking_card > .mid > .rating > span:last-child{
+    font-size: 10px; letter-spacing: 1.2px;
+  }
+  
+  .ranking_card > .mid > .score{display: flex; align-items: center;}
+  .ranking_card > .mid > .score > span{display: flex; font-size: 20px;}
+  .ranking_card > .mid > .score > span.win{margin-right: 8px;}
+  
+  .ranking_card > .right{
+    display: flex; flex-direction: column; justify-content: center; align-items: center; 
+    height: 100%; padding-left: 12px;
+    border-left: 1px solid #636e72;
+  }
+  .ranking_card > .right > .ranking{font-size: 34px; line-height: 34px;}
+  .ranking_card > .right > span:last-child{font-size: 14px; line-height: 14px;}
+}
+
+/* 휴대폰 사이즈 */
+/* @media screen and (max-width: 575px) {
+  .ranking_card{
+    width: 90%; min-width: 320px; padding: 12px;
+  }
+  
+  .ranking_card > .left{
+    width: 20%;
+  }
+  .ranking_card > .left > .profile_img{
+    width: 90%; height: 0; padding-top: 90%;
+    position: relative;
+  }
+  .ranking_card > .left > .profile_img img{
+    position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+    width: 100%; height: 100%;
+  }
+  .ranking_card > .left > .name{
+    font-size: 12px;
+  }
+  
+  .ranking_card > .mid{
+    width: 60%;   
+  }
+  .ranking_card > .mid > .rating{
+    margin-bottom: 0;
+  }
+  .ranking_card > .mid > .rating > span:first-child{
+    font-size: 32px; line-height: 32px;
+  }
+  .ranking_card > .mid > .rating > span:last-child{
+    font-size: 10px;
+  }
+  
+  .ranking_card > .mid > .score > span{font-size: 12px;}
+  
+  .ranking_card > .right{
+    width: 20%; height: 100%;
+  }
+  .ranking_card > .right > .ranking{font-size: 32px; line-height: 32px; margin-bottom: 4px;}
+  .ranking_card > .right > span:last-child{font-size: 12px; line-height: 12px;}
+} */

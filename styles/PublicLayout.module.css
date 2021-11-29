@@ -1,0 +1,114 @@
+/* Top */
+.header{
+  width: 100%; height: 70px;
+  background-color: #101820;
+  border-bottom: 1px solid #636e72;
+}
+.header .container__header{
+  display: flex; justify-content: space-between; align-items: center;
+  width: 1080px; height: 100%; margin: 0 auto;
+  transition: .5s;
+}
+.header .logo{
+  margin: 0;
+  font-size: 32px; color: #3498db; letter-spacing: 2px;
+}
+
+.header ul{display: flex; align-items: center; position: relative;}
+
+.header .login_bar li:nth-child(1){
+  display: flex; justify-content: center; align-items: center;
+  position: relative;
+  margin-right: 6px;
+  transition: .5s;
+}
+.header .login_bar li:nth-child(1) > svg{
+  display: none;
+  position: absolute;
+  width: 100%; height: 100%; padding: 4px;
+  border-radius: 50%; background-color: rgba(255, 255, 255, .7);
+}
+.header .login_bar li:nth-child(1):hover > svg{
+  display: flex; justify-content: center; align-items: center;
+  cursor: pointer;
+}
+
+.header .login_bar .name_editing{
+  display: flex; align-items: center; margin-right: 8px;
+}
+.header .login_bar .name_editing > div{
+  margin-right: 8px;
+}
+
+.header .login_bar .name{
+  display: flex; justify-content: center; align-items: center;
+  position: relative;
+  margin-right: 8px;
+  transition: .5s;
+}
+.header .login_bar .name span{
+  font-size: 26px; color: #3498db; line-height: 26px; letter-spacing: 1.2;
+}
+.header .login_bar .name > svg{
+  display: none;
+  position: absolute;
+  width: 100%; height: 100%; padding: 2px;
+  background-color: rgba(255, 255, 255, .7); border-radius: 6px;
+}
+.header .login_bar .name:hover span{
+  opacity: .6;
+}
+.header .login_bar .name:hover > svg{
+  display: block;
+  cursor: pointer;
+}
+
+.header .logout_bar button{margin-left: 8px;}
+
+/* Footer */
+.footer{
+  display: flex; justify-content: center; align-items: center; 
+  width: 100%; height: 60px; 
+  background-color: #101820; 
+  font-size: 12px; color: #dfe6e9; font-weight: 400; letter-spacing: 1.3;
+}
+
+
+
+
+
+/* 타블렛 사이즈 */
+/* 타블렛 사이즈 */
+@media screen and (max-width: 1079px) {
+  .header .container__header{
+    width: 768px;
+  }
+}
+
+/* 작은 타블렛 사이즈 */
+/* 작은 타블렛 사이즈 */
+@media screen and (max-width: 768px) {
+  .header .container__header{
+    width: 85%;
+  }
+
+  .header .logo{
+    font-size: 20px;
+  }
+
+  .header .login_bar li:nth-child(1){
+    width: 32px; height: 32px;
+  }
+  .header .login_bar li:nth-child(2){
+    margin-right: 6px;
+  }
+  .header .login_bar li:nth-child(2) span{
+  font-size: 24px; line-height: 24px;
+  }
+  
+  .header .login_bar button{font-size: 10px;}
+
+  .footer{
+    font-size: 10px;
+  }
+}

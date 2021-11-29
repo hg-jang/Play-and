@@ -1,0 +1,67 @@
+.title_box{
+  display: flex;
+  width: 100%; margin-bottom: 12px; padding: 8px;
+}
+.title_box > h1{
+  width: 50%;
+  font-size: 24px; text-align: center;
+}
+.date_box{
+  display: flex; justify-content: flex-end; align-items: center;
+  width: 100%; margin-bottom: 8px;
+}
+.date_box > div:first-child{
+  margin-right: 8px;
+}
+.date_box > div:nth-child(2){
+  margin-right: 8px;
+}
+.date_box ul{
+  max-height: 300px;
+  overflow: auto;
+  scrollbar-color: rgba(116, 185, 255, .5) rgba(255, 255, 255, 0); scrollbar-width: thin;
+}
+.search_box{
+  display: flex; justify-content: space-between;
+  width: 100%; margin-bottom: 8px; padding: 8px;
+}
+.search_box > div{
+  width: 45%; 
+}
+.selected_members{
+  display: flex; justify-content: space-between;
+  width: 100%; margin-bottom: 8px; padding: 8px;
+}
+.selected_members > div{
+  width: 50%;
+}
+.selected_members > div:first-child{
+  margin-right: 8px;
+}
+.buttons{
+  display: flex; justify-content: center;
+  width: 100%; margin-bottom: 8px;
+}
+.buttons > button{
+  max-width: 240px;
+}
+.buttons > button:first-child{
+  margin-right: 8px;
+}
+
+/* 체크 버튼 위치 조정 */
+.selected_member > div > div:last-child{
+  align-self: center;
+  margin: 0;
+}
+
+.members{
+  display: flex; flex-direction: column;
+  width: 100%; padding: 8px;
+}
+
+/* 체크 버튼 위치 조정 */
+.member > div > div:last-child{
+  align-self: center;
+  margin: 0;
+}

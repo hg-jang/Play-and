@@ -1,0 +1,35 @@
+.admin_recording .member{
+  position: relative;
+  height: 64px; margin-bottom: 8px;
+  background-color: #fff; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.admin_recording .member:last-child{
+  margin-bottom: 0;
+}
+.admin_recording .member > img{
+  position: absolute; top: 50%; left: 4px; transform: translateY(-50%);
+  width: 56px; height: 56px;
+}
+.admin_recording .member > .info{
+  display: flex; flex-direction: column;
+  position: absolute; top: 50%; left: 72px; transform: translateY(-50%);
+}
+.admin_recording .member > .info > span:first-child{
+  margin-bottom: 6px;
+  font-size: 28px;
+}
+.admin_recording .member > .info > span:last-child{
+  font-size: 20px;
+}
+.admin_recording .member > i{
+  display: flex; justify-content: center; align-items: center;
+  position: absolute; top: 50%; right: 4px; transform: translateY(-50%);
+  width: 56px; height: 56px;
+  background-color: #2ecc71;
+  font-size: 40px; line-height: 40px;
+  cursor: pointer;
+}
+.admin_recording .member > i:hover{
+  background-color: #27ae60;
+}
+

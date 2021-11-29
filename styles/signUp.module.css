@@ -1,0 +1,56 @@
+.signup{
+  width: 100%; height: calc(100vh - 130px); min-height: 580px;
+  position: relative; background-color: #101820;
+}
+.signup > h1{
+  position: absolute; top: 10%; left: 50%; transform: translateX(-50%); 
+  font-size: 48px; color: #3498db;
+  transition: .5s;
+}
+
+.signup > form{display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -40%);}
+
+.signup > form > div{
+  width: 300px; margin-bottom: 8px;
+}
+.signup > form > div > label{ 
+  color: #fff !important;
+}
+.signup > form > div > label > span{
+  color: #fff;
+}
+.signup > form > div > div{
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.signup > form > div.term{
+  display: flex; flex-direction: column;
+  margin-bottom: 16px;
+}
+.signup > form div.term > div{
+  display: flex; align-items: center;
+  border-bottom: none;
+}
+.signup > form div.term > div input[type=checkbox]{
+  width: 15px; height: 15px;
+}
+.signup > form .term > div > input[type=checkbox]:hover{cursor: pointer;}
+.signup > form .term > div > label{
+  margin-left: 8px; 
+  color: #fff;
+}
+
+/* for error message */
+.signup > form > span{
+  width: 100%; margin: 4px 0; padding: 4px 0;
+  background-color: rgba(231, 76, 60, .7);
+  color: #fff; text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .signUp > h1{
+    font-size: 40px;
+  }
+}

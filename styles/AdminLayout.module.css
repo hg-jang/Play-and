@@ -1,0 +1,4 @@
+.admin_group_grid{
+  display: grid; grid-template-columns: 260px calc(100% - 260px);
+  height: 100%;
+}
