@@ -12,14 +12,16 @@ const Home = () => {
     <Head>
       <title>Play and</title>
       <meta charSet="utf-8" />
-      <meta name="author" content="장현광" />
-      <meta name="description" content="온라인에서 테니스 만남을 이어가세요" />
-      <meta name="subject" content="Online tennis community" />
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content="Play and" />
-      <meta property="og:description" content="온라인에서 테니스 만남을 이어가세요" />
-      <meta property="og:image" content="/src/images/logo.png" />
-      <meta property="og:url" content="https://playand.netlify.app/" />
+      <meta name="author" content="장현광" key="author" />
+      <meta name="description" content="온라인에서 테니스 만남을 이어가세요" key="desc" />
+      <meta name="subject" content="Online tennis community" key="subject" />
+
+      {/* open graph */}
+      <meta property="og:type" content="website" key="ogtype" />
+      <meta property="og:title" content="Play and" key="ogtitle" />
+      <meta property="og:description" content="온라인에서 테니스 만남을 이어가세요" key="ogdesc" />
+      <meta property="og:image" content="/src/images/logo.png" key="ogimage" />
+      <meta property="og:url" content="https://playand.netlify.app/" key="ogurl" />
     </Head>
     <PublicLayout>
       <div className={styles.index}>
