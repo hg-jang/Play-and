@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Button from '@mui/material/Button';
 import Link from 'next/link';
 
@@ -7,6 +8,19 @@ import PublicLayout from '../src/layouts/publicLayout';
 
 const Home = () => {
   return (
+    <>
+    <Head>
+      <title>Play and</title>
+      <meta charSet="utf-8" />
+      <meta name="author" content="장현광" />
+      <meta name="description" content="온라인에서 테니스 만남을 이어가세요" />
+      <meta name="subject" content="Online tennis community" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Play and" />
+      <meta property="og:description" content="온라인에서 테니스 만남을 이어가세요" />
+      <meta property="og:image" content="/src/images/logo.png" />
+      <meta property="og:url" content="https://playand.netlify.app/" />
+    </Head>
     <PublicLayout>
       <div className={styles.index}>
         <div className={styles.container__index}>
@@ -44,6 +58,7 @@ const Home = () => {
         </div>
       </div>
     </PublicLayout>
+    </>
   )
 }
 
