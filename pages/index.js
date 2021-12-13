@@ -1,7 +1,8 @@
 import React from 'react';
-import Head from 'next/head';
 import Button from '@mui/material/Button';
 import Link from 'next/link';
+import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import styles from '../styles/index.module.css';
 import PublicLayout from '../src/layouts/publicLayout';
@@ -17,11 +18,16 @@ const Home = () => {
       <meta name="subject" content="Online tennis community" key="subject" />
 
       {/* open graph */}
-      <meta property="og:type" content="website" key="ogtype" />
-      <meta property="og:title" content="Play and" key="ogtitle" />
-      <meta property="og:description" content="온라인에서 테니스 만남을 이어가세요" key="ogdesc" />
-      <meta property="og:image" content="/src/images/logo.png" key="ogimage" />
-      <meta property="og:url" content="https://playand.netlify.app/" key="ogurl" />
+      <NextSeo
+        openGraph={{
+          title: "Play and",
+          description: "온라인에서 테니스 만남을 이어가세요.",
+          url: "https://playand.netlify.app/",
+          images: [{
+            url: "/src/images/logo.png"
+          }]
+        }}
+      />
     </Head>
     <PublicLayout>
       <div className={styles.index}>
